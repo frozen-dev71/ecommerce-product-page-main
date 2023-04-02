@@ -34,15 +34,18 @@ hr {
 .content2 .buy {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.content2 .buy img {
-    flex: 1;
+.content2 .buy .image {
+    /* flex: 1; */
+    width: 60px;
+    height: 60px;
 }
 
-.content2 .buy .desc {
+/* .content2 .buy .desc {
     flex: 3;
-}
+} */
 
 .content2 .buy .desc p {
     padding-left: .5rem;

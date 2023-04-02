@@ -20,7 +20,9 @@ function Cart (props) {
                 </div>
                 <div className='content2'>
                     <div className='buy'>
+                        <div className='image'>
                         <img src={product} alt="buy-product" />
+                        </div>
                         <div className='desc'>
                             <p>Fall Limited Edition Sneakers
                                 <br />
