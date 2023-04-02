@@ -1,0 +1,160 @@
+main .main-cont {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.main-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.product {
+    flex: 1;
+}
+
+.product .main-img {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.product ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.product ul li img {
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.active-img {
+    border: 2px solid var(--Orange);
+    opacity: .5;
+}
+
+.main-cont .desc {
+    flex: 1;
+    padding-left: 3rem;
+}
+
+.desc b {
+    color: var(--Orange);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.desc h1 {
+    color: var(--vdBlue);
+    font-size: 3rem;
+}
+
+.desc p {
+    padding-left: 0;
+    color: var(--dgBlue);
+    line-height: 1.5;
+}
+
+.desc h2 {
+    color: var(--vdBlue);
+}
+
+.desc h2 span {
+    display: inline-block;
+    background-color: var(--paleOrange);
+    margin-left: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    color: var(--Orange);
+    border-radius: .5rem;
+}
+
+.discount {
+    text-decoration: line-through;
+}
+
+.desc .count-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.desc .count-btn .count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem;
+    background-color: var(--vlgray);
+    border-radius: .7rem;
+    flex: 1;
+}
+
+.desc .count-btn .count button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.desc .count-btn .count span {
+    display: inline-block;
+}
+
+.btn {
+    flex: 2;
+    border:2px solid var(--Orange);
+    border-radius: .7rem;
+    background-color: var(--Orange);
+    box-shadow: 0 0 2rem var(--paleOrange);
+    font-size: 1rem;
+    padding: .3rem;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--Orange);
+}
+
+.btn img {
+    width: 30px;
+    height: 30px;
+    padding-right: 1rem;
+}
+
+@media (max-width: 800px) {
+    .main-cont {
+        flex-direction: column;
+        text-align: center;
+    }
+    .desc .count-btn .count {
+        flex: 2;
+    }
+    .desc .count-btn {
+        flex-direction: column;
+    }
+    .desc .count-btn .count {
+        width: 80%;
+    }
+    .desc .count-btn .btn {
+        width: calc(80% + 1.2rem);
+    }
+    .main-cont .desc {
+        padding: 0;
+    }
+    .desc b {
+        display: block;
+        margin-top: 3rem;
+    }
+}

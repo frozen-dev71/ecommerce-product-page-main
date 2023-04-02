@@ -378,3 +378,18 @@ template {
 
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@700&family=Epilogue:wght@500;700&family=Fraunces:wght@700;900&family=Hanken+Grotesk:wght@500;700;800&family=Karla&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Lexend+Deca&family=Manrope:wght@700&family=Markazi+Text:wght@500&family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Public+Sans:wght@300;400;700&family=Rubik:wght@400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* global rules */
+.container {
+  max-width: 909pt;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15pt;
+  padding-right: 15pt;
+  /* background-color: blue; */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

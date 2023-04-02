@@ -1,0 +1,31 @@
+aside {
+    position: fixed;
+    background-color: var(--gblue);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--white);
+    width: calc((100% / 3) * 2);
+    padding-left: 15pt;
+}
+
+aside ul li a {
+    padding: 15px;
+    color: var(--bdBlue);
+}
+
+aside ul li a:hover {
+    color: var(--Orange);
+}
