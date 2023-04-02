@@ -12,9 +12,9 @@ function Main (props) {
     const [image, setImage] = useState(product1);
 
     const handleClick = () => {
-        console.log(document.querySelector(".content2"));
         document.querySelector(".content2").style.display = "block";
         document.querySelector(".content1").style.display = "none";
+        document.querySelector(".nav-right li span").style.opacity = "1";
     };
 
     const handleImage = (e) => {
@@ -54,7 +54,7 @@ function Main (props) {
                             <span>{props.count}</span>
                             <button onClick={props.plus}><img src={plusIcon} alt="plus-icon" /></button>
                         </div>
-                        <button onClick={handleClick} className='btn'>
+                        <button disabled={props.cannot} onClick={handleClick} className='btn'>
                             <img src={cartIcon} alt="cart" />
                             <span>Add to cart</span>
                         </button>

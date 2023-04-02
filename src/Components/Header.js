@@ -32,7 +32,7 @@ function Header (props) {
                         <li><img src={iconCart} alt="icon-cart" onClick={cart} /> <span>{props.count}</span></li>
                         <li><img src={avatar} alt="avatar" /></li>
                     </ul>
-                    <Cart count={props.cart} price={props.price} zeroProduct={props.zeroProduct} />
+                    <Cart count={props.cart} price={props.price} zeroProduct={props.cancel} />
                 </div>
             </header>
             <MobileNav />

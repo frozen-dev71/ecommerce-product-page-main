@@ -4,10 +4,11 @@ import '../Styles/Cart.css';
 
 function Cart (props) {
 
-    const zeroProduct = () => {
-        document.querySelector(".content1").style.display = "block";
-        document.querySelector(".content2").style.display = "none";
-    };
+    // const zeroProduct = () => {
+    //     document.querySelector(".content1").style.display = "block";
+    //     document.querySelector(".content2").style.display = "none";
+    //     document.querySelector(".nav-right li span").style.opacity = "0";
+    // };
 
     return (
         <>
@@ -28,7 +29,7 @@ function Cart (props) {
                             </p>
                         </div>
                     </div>
-                    <button onClick={zeroProduct} className='cancel'><img src={cancel} alt="cancel" />Cancel</button>
+                    <button onClick={props.zeroProduct} className='cancel'><img src={cancel} alt="cancel" />Cancel</button>
                     <button className='confirm'>Checkout</button>
                 </div>
             </div>
