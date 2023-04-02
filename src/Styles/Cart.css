@@ -38,14 +38,9 @@ hr {
 }
 
 .content2 .buy .image {
-    /* flex: 1; */
     width: 60px;
     height: 60px;
 }
-
-/* .content2 .buy .desc {
-    flex: 3;
-} */
 
 .content2 .buy .desc p {
     padding-left: .5rem;
@@ -95,5 +90,8 @@ hr {
         left: 1rem;
         right: 1rem;
         top: calc(100% + 1rem);
+    }
+    .buy {
+        flex-direction: column;
     }
 }
